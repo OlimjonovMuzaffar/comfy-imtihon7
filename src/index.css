@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  height: 35px;
+  border-radius: 10px;
+  color: white;
+  background: #021431;
+}
+
+body.active-modal {
+  overflow-y: hidden;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-modal {
+  padding: 8px 40px;
+  border-radius: 12px;
+  font-size: 18px;
+  margin-top: 250px;
+  display: flex;
+  gap: 10px;
+}
+
+.google {
+  position: relative;
+  top: 7px;
+}
+
+.button {
+  padding: 8px 40px;
+  border-radius: 12px;
+  font-size: 18px;
+  background-color: #414558;
+  color: white;
+}
+
+.btn-modal:hover {
+  background-color: #414558;
+  color: white;
+}
+
+.modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay {
+  background: var(--cl-black);
+  opacity: 0.5;
+}
+
+.modal-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #f1f1f1;
+  padding: 14px 28px;
+  border-radius: 3px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 7px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal_form {
+  line-height: 23px;
+}
+
+.tel_text {
+  margin-bottom: 25px;
+}
+
+.inp_tel {
+  margin-bottom: 25px;
+}
+
+.inp_password {
+  margin-bottom: 37px;
+}
+
+.tel {
+  max-width: 555px;
+  width: 100%;
+  padding: 11px;
+  font-size: 18px;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid #4dc0ec;
+}
+
+.password {
+  max-width: 555px;
+  width: 100%;
+  padding: 11px;
+  font-size: 18px;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid #4dc0ec;
+}
+
+.div_btn_modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_modal {
+  max-width: 555px;
+  width: 100%;
+  padding: 11px;
+  border-radius: 7px;
+  outline: none;
+  cursor: pointer;
+  padding: 9px;
+  font-size: 16px;
+  border: 2px solid var(--cl-blue50);
+  color: var(--cl-blue50);
+  border-radius: 5px;
+  background: none;
+  transition: 0.2s;
+  margin-bottom: 13px;
+}
+
+.btn_modal:hover {
+  background-color: var(--cl-blue50);
+  color: var(--cl-white);
+}
